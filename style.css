@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #1b3c75;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e7f4ff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  padding: 20px;
+}
+.service {
+  display: inline-block;
+  width: 28%;
+  margin: 10px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+/* Destinations */
+.destinations {
+  padding: 20px;
+  text-align: center;
+}
+.destination {
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+.destination img {
+  width: 100%;
+  display: block;
+}
+
+/* Clear floats */
+.destinations::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Media Query */
+/* Mobile ≤ 639px: عنصر واحد في السطر */
+@media (max-width: 639px) {
+  header nav a {
+    display: block;
+    margin: 8px 0;
+  } /* من الأفضل تكديس روابط النافبار */
+  .service,
+  .destination {
+    width: 92%;
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+  .destination img {
+    height: 180px;
+  }
+}
+/* Tablet 640–959px: عنصران في السطر */
+@media (min-width: 640px) and (max-width: 959px) {
+  .service,
+  .destination {
+    width: 48%;
+    float: none; /* نخليها بلوك باش يكون سطرين من عنصرين */
+    display: inline-block;
+    margin: 10px 1%;
+    vertical-align: top;
+  }
+  .destination img {
+    height: 180px;
+  }
+}
