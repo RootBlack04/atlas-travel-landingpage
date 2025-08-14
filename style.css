@@ -73,6 +73,9 @@ footer {
   margin-top: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* Media Query */
 /* Mobile ≤ 639px: عنصر واحد في السطر */
 @media (max-width: 639px) {
